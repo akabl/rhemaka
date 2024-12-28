@@ -1,0 +1,480 @@
+/* rhemaka Programming Institute r0.01*/
+/*Code by: Jr Paul Okorie
+Description: Global CSS file for signup form, signin form, forgotten password form, reset password form and find account form !
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
+
+/* ---------------------------------------------
+  Table of contents
+------------------------------------------------
+
+04. header
+05. main
+06. footer
+07. animation templates
+08. @media queries
+09. @media queries > header
+10. @media queries > main
+11. @media queries > footer
+12. ..NOTE ??????????
+
+--------------------------------------------- */
+
+/* 
+header
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+.sign-Container{
+  width:100vw;
+  max-width:75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.greeting {
+ width:30%;
+ display: grid;
+ height:100vh;
+ min-height:500px;
+ justify-content:center;
+ align-items:start;
+ padding: 10rem 0 0 0;
+}
+.greeting .header-Content {
+ display: grid;
+ width:100%;
+ justify-content:start;
+ align-items:center;
+}
+.greeting .header-Content h2 {
+ font-family:'Segoe UI';
+ font-size:30px;
+ background: rgb(255, 255, 255);
+ border-radius:40px;
+ font-weight:bold;
+ padding:10px 30px;
+ width:fit-content;
+ margin:0 0 30px 0;
+ justify-self:start;
+ align-self:end;
+ box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.164);
+}
+.greeting .header-Content p{
+ font-family:'Segoe UI';
+ font-size:17px;
+ width:250px;
+ height: 70%;
+ text-align: start;
+ justify-self:center;
+ align-self:start;
+}
+.greeting .arrow-case{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.greeting .arrow{
+ width:80px;
+ height:80px;
+ border-radius: 50%;
+ background: rgba(0, 0, 0, 0.589);
+ justify-content: center;
+ align-items: center;
+ display:flex;
+ justify-self: end;
+ text-align: center;
+ position: relative;
+}
+.arrow a{
+  display: block;
+  width:80px;
+  height:80px;
+  position: absolute;
+  left:0;
+}
+.greeting .arrow img{
+ width:80px;
+ height:80px;
+}
+.arrow img{
+  animation: sliderLeftRight 3s ease-in-out 1s infinite ;
+ }
+ .greeting :last-child{
+ margin-top: 5px;
+ font-size: 12px;
+ justify-self: end;
+ text-align: center;
+}
+/* 
+main
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+.main__form{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width:320px;
+ height:calc(100vh - 150px);
+ min-height: 35rem;
+ background:rgba(255, 255, 255, 0.425);
+ border-radius: 30px;
+ padding:50px 0;
+ box-shadow: 0 0 20px 10px rgba(3, 3, 3, 0.178);
+ margin:70px 0 0 0;
+ position:relative;
+}
+.main__form h2{
+ width:85%;
+ justify-self: center;
+ font-size:30px;
+ margin: 0 0 10px 0;
+ font-size:26px;
+ font-weight:400;
+}
+.main__form .error{
+  font-size: 13px;
+  color:rgb(252, 0, 147);
+  width:80%;
+  display:none;
+}
+form{
+display: flex;
+flex-direction: column;
+align-items:center;
+color:rgb(241, 241, 241);
+width:100%;
+}
+.main__form input, .number{
+ height:2.3rem;
+ border-radius:50px;
+ border:none;
+ margin:13px 0;
+ width:85%;
+ padding:0 20px;
+ color:rgb(133, 133, 133);
+}
+input[type="submit"]{
+ margin-top:4rem;
+ background: var(--dark-blue);
+ width:65%;
+ color:white;
+ font-weight:lighter;
+ font-size: 13px;
+}
+input[type="submit"]:hover{
+ background: #00223fa1;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.showPassword{
+  position:absolute;
+  top:277px;
+  right:50px;
+  height:25px;
+  width:20px;
+  height:20px;
+  color:rgb(0, 128, 247)
+}
+.showPassword:hover{
+  cursor: pointer;
+  color:var(--light-gray)
+}
+/* Firefox */
+input[type=number] {
+/*  -moz-appearance: textfield;*/
+  width:80%;
+  border-radius:0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+input[type="text"]{
+  text-transform: capitalize;
+}
+.number{
+ display:flex;
+ align-items: center;
+ width: fit-content;
+ max-width:85%;
+ background: rgb(255, 255, 255);
+ padding:0;
+}
+.number >img{
+  width:30px;
+  height:20px;
+  margin-right:5px;
+  margin-left: 13px;
+}
+.number > p{
+  color:rgb(114, 114, 114);
+  font-size:12px;
+  cursor:pointer;
+  display: flex;
+}
+.number:hover{
+  background: rgb(255, 255, 255);
+}
+ .flag-container{
+   position: fixed;
+   left:40%;
+   right:50%;
+   display:none;
+ }
+ .flag-drop-down{
+  background: white;
+  padding:20px 5px;
+  height: 15rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  border-radius:10px;
+  box-shadow: 0 0 10px gray;
+}
+.flag-drop-down div{
+  display:flex;
+  justify-content: space-between;
+  padding:7px;
+  width:180px;
+  background:rgb(255, 255, 255);
+
+  border:none;
+}
+.flag-drop-down ::-webkit-scrollbar{
+  width:100px;
+}
+.flag-drop-down::-webkit-scrollbar-track{
+border-radius: 20px;
+background: #00a2ff;
+}
+ .flag-drop-down div:hover{
+  background: rgb(160, 160, 160);
+  cursor: pointer;
+}
+.flag-drop-down div img{
+  width:30px;
+  height: 20px;
+}
+.flag-drop-down div p{
+  color:rgb(155, 155, 155);
+}
+.flag-container >img{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px gray;
+}
+.Resend_mail{
+  width:100%;
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  padding-right:50px;
+}
+.Resend_mail a{
+  font-size: 11px;
+  margin-right: 5px;
+  color:black;
+}
+.Resend_mail p{
+  padding:2px 10px;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  font-size: 11px;
+  font-weight: 200;
+  border-radius: 20px;
+}
+
+   /* 
+footer
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+.left-bar{
+ width:30%;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content: center;
+ margin:0 ;
+
+}
+.left-bar p {
+  text-align:start;
+  width:65%;
+  font-size: 17px;
+  color:rgb(255, 255, 255);
+  display:inline;
+ }
+  .left-bar a {
+ text-align:start;
+ width:65%;
+ font-size: 14px;
+ color:rgb(255, 255, 255);
+ display:inline;
+}
+.left-bar > :nth-child(2){
+  margin-top: 20px;
+}
+.left-bar a{
+ color:rgb(193, 208, 236);
+ cursor: pointer;
+ display:inline;
+}
+.left-bar a:hover{
+  color:rgb(5, 5, 7);
+  cursor: pointer;
+ }
+ .left-bar .sign-with{
+ margin-top: 50px;
+ width:50%;
+ display:flex;
+ flex-direction: column;
+ justify-content:flex-end;
+ align-self: flex-end;
+ margin-right:5vw;
+}
+.sign-with  div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:70%;
+ }
+ .sign-with  div div{
+   width:30px;
+   height:30px;
+  border-radius: 50%;
+  background: white;
+  justify-content:center;
+  align-items: center;
+  display:flex;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.164);
+  margin:0 10px 0 0;
+ }
+ .sign-with div img:hover{
+  transform:scale(120%);
+  transition: 0.7s;
+ }
+ .sign-with div img{
+  width:15px;
+  height:15px;
+ }
+   /* 
+animation template
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+@keyframes sliderLeftRight{
+ 0%{
+  transform: rotate(90deg) translate(0);
+ }
+ 50% {
+  transform: rotate(90deg) translateY(30px);
+ }
+ 100% {
+  transform: rotate(90deg) translateY(0);
+ }
+}
+@keyframes sliderUpDown {
+  0%{
+   transform:  rotate(180deg) translate(0);
+  }
+  50% {
+   transform: rotate(180deg) translateY(30px);
+  }
+  100% {
+   transform: rotate(180deg) translateY(0);
+  }
+ }
+   /* 
+@media queries!
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+@media only screen and (min-width: 360px) and (max-width: 968px) {
+  .sign-Container{
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-content:center;
+  }
+
+   /* 
+@media queries! > header
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+  header .arrow-case img{
+    animation: sliderUpDown 2s ease-in-out 0.5s infinite ;
+    }
+   /* 
+@media queries! > main
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+main{
+  max-width:90vw;
+}
+.flag-drop-down{
+  top:30vh;
+}
+.flag-container{
+  top:22vh;
+}
+   /* 
+@media queries! > footer
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+footer{
+  display: flex;
+  width:100vw;
+  margin:50px 0 0 0;
+  flex-direction:column-reverse;
+  height:300px;
+  align-items: space-between;
+  padding-bottom:50px;
+  background: rgba(0, 0, 0, 0.589);
+  height:500px;
+}
+footer p, footer a{
+  text-align: center;
+}
+footer a{
+  margin:0 0 10px 0;
+  color:rgb(119, 119, 119);
+}
+footer a:focus{
+  color:var(--dark-blue);
+  cursor: pointer;
+ }
+footer p{
+  color:rgb(187, 187, 187);
+}
+footer .sign-with{
+  display: flex;
+  align-self: center;
+  margin:0;
+  margin-bottom: 40px;
+  width:100vw;
+}
+.sign-with  div div{
+  justify-self: center;
+  background:none ; 
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.096);
+  width:25px;
+  height: 25px;
+}
+
+.sign-with  div {
+  max-width:250px;
+  display: flex;
+  justify-content:space-around;
+  margin:5px 0 5px 0;
+  align-self: center;
+}
+}
+/* 
+..NOTE ?????????
+This version of rhemaka is its one of its it will take upgrade every month after its been lunched 
+Loading... */

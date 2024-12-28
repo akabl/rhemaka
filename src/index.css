@@ -1,0 +1,142 @@
+/* rhemaka Programming Institute r0.01
+Code by: Jr Paul Okorie
+Global CSS reset!
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ */
+
+/* ---------------------------------------------
+  Table of contents
+------------------------------------------------
+01. variables
+02. reset
+03. global styles
+--------------------------------------------- */
+
+/*
+  variables
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+*/
+:root{
+  /*
+  //color variables
+  */
+  --dark-gray:rgb(0, 0, 0);
+  --light-gray:rgb(117, 117, 117);
+  --lighter-gray:rgb(173, 173, 173);
+  --dark-blue:rgb(0, 119, 255);
+  --light-blue:rgb(0, 153, 255);
+  --lighter-blue:rgb(149, 174, 255);
+  --white:rgb(255, 255, 255);
+  --black:rgb(0, 0, 0);
+  --dark-red:rgb(155, 58, 58);
+  --light-red:rgb(218, 119, 119);
+  --lighter-red:rgb(255, 176, 176);
+ }
+  /*
+  reset
+ ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+ */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+ pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+ s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+ figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width:fit-content;
+  height:fit-content;
+  box-sizing: border-box;
+ }
+ a{
+  text-decoration: none !important;
+  color:rgb(0, 89, 255);
+  text-align: end;
+  width:fit-content;
+  margin: none;
+ }
+ ul{
+  list-style-type: none;
+  display:flex;
+ }
+ header, nav, section, article, aside, footer, hgroup {
+  display: block;
+ }
+ .clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+ }
+ 
+ .clearfix {
+  display: inline-block;
+ }
+ 
+ html[xmlns] .clearfix {
+  display: block;
+ }
+ html {
+   scroll-behavior: smooth;
+ }
+ * html .clearfix {
+  height: 1%;
+ }
+ * {
+  box-sizing: border-box;
+ }
+ h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+ 
+ ul {
+  margin-bottom: 0px;
+ }
+ 
+ p {
+  line-height:auto;
+  text-align: center;
+  color: rgb(235, 235, 235);
+ }
+ input, textarea{
+  outline:none;
+ }
+ input[type="checkbox"]{
+   width:15px;
+   height:15px;
+   display:inline;
+   accent-color: rgb(0, 0, 0);
+ }
+ /* 
+  global styles
+ ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+ */
+ html, body {
+  width:100vw;
+  font-family:'Segoe UI';
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+  min-height:100vh;
+  background:var(--dark-blue);
+ }
+ 
+ ::selection {
+  background: rgb(0, 0, 0);
+  color:var(--white);
+ }
+ 
+ ::-moz-selection {
+  background: var(--dark-red);
+  color: var(--white);
+ }
+ /* body {
+    -moz-transform: scale(1);
+    zoom:1;
+    zoom: 100%;
+ } */
+ .container{
+  width:90%;
+ }

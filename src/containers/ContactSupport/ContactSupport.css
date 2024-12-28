@@ -1,0 +1,17 @@
+.ContactSupport {
+    display:flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+}
+.ContactSupport > div{
+    width:70%;
+    max-width:50rem;
+    display:flex;
+    justify-content: center;
+    height:25rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.356);
+}

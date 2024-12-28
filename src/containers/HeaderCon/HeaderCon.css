@@ -1,0 +1,23 @@
+.main-header{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    box-sizing: border-box;
+    padding:0 100px 0 100px;
+    align-items: center;
+    width:100vw;
+    height:70px;
+    margin: 0;
+    box-shadow: 0 -5px 10px 10px rgba(0, 0, 0, 0.055);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:90000000000;
+   }
+   .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100%;
+   }

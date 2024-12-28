@@ -1,0 +1,219 @@
+.feature__container{
+    padding-top:20px;
+    width:calc(100% - 20px);
+    height:calc(100% - 200px)
+}
+.features{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.features div{
+    width:30%;
+    background-color: rgb(238, 238, 238);
+    padding:20px;
+}
+.features div img{
+    width:50px;
+    height:50px;
+    margin-bottom: 10px;
+}
+.features div h5, .features div p {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 5px;
+    color:black;
+}
+.about__comunity{
+    height:auto;
+    max-height: 22rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 5px rgb(221, 221, 221);
+}
+.about__comunity div{
+    width:50%;
+}
+/* .about__img{
+    width:100%;
+    height:100%;
+} */
+.about__comunity img{
+    width:50%;
+    height:50%;
+    object-fit: cover;
+}
+.about__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:10px 30px 0 30px;
+}
+.about__text h1, .about__text p{
+    text-align: left;
+    color: black;
+    margin: 0;
+    border: none;
+}
+.about__text h1{
+    line-height:30px;
+    margin-bottom: 10px;
+    font-weight:500;
+}
+.about__text p{
+    font-size: 13px;
+    padding: 10px 0;
+    color:rgb(182, 182, 182);
+    font-weight: 10;
+}
+.about__text button{
+    border:none;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    background: rgb(0, 102, 255);
+    font-weight:300;
+    margin-top:10px;
+    width:10rem;
+    height:40px;
+}
+.Executives{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.Executives > .co__founder, .Executives > div{
+    height:25rem;
+    background:rgb(255, 255, 255);
+    width:30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.26);
+    padding:30px;
+}
+.Executives > div :nth-child(4){
+    font-weight: 700;
+}
+.Executives > div :nth-child(5), .Executives > div :nth-child(1){
+    color: rgb(146, 146, 146);
+    margin-top: 5px;
+}
+.Executives >:first-child  :nth-child(5),.Executives > :first-child :nth-child(1){
+    color:rgb(167, 195, 255);
+    margin-top: 5px;
+}
+/* .Executives > :first-child :nth-child(1){
+    color:rgb(255, 255, 255);
+} */
+.Executives .co__founder{
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.Executives> :first-child {
+    background-color:rgb(0, 110, 255);
+}
+.Executives > div p{
+    font-size: 12px;
+    color: black;
+}
+.Executives > :first-child p{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.Executives > :first-child img{
+    border-radius: 50%;
+    object-fit: cover;
+    height:100px;
+    width:100px;
+    margin: 20px 0;
+}
+.Executives > :first-child h3{
+    color:rgb(255, 255, 255);
+}
+.Executives > :first-child button{
+    margin-top: 20px;
+    padding:10px 10px;
+    border:none;
+    color:rgb(0, 110, 255);
+    font-size: 12px;
+    background: rgb(255, 255, 255);
+    font-weight: 300;
+    border-radius: 5px;
+}
+.Executives > :nth-child(2) img{
+    border-radius: 50%;
+    object-fit: cover;
+    height:100px;
+    width:100px;
+    margin: 20px 0;
+}
+.Executives > :nth-child(2) button{
+    margin-top: 20px;
+    padding:10px 10px;
+    border:none;
+    color:rgb(255, 255, 255);
+    font-size: 12px;
+    background-color:rgb(0, 110, 255);
+    font-weight: 300;
+    border-radius: 5px;
+}
+.Executives .other__executives{
+    padding:0;
+    box-shadow: none;
+}
+.Executives .other__executives > div{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: 10px 0;
+    min-height: 7.5rem;
+    padding:10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+}
+.Executives .other__executives > div:hover{
+    transform: scale(110%) translateX(-10px);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.Executives > :nth-child(2):hover, .Executives > :first-child:hover{
+    transform: scale(110%) translateY(12px);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.Executives .other__executives > div p, .Executives .other__executives > div h5{
+    text-align: left;
+    color: rgb(143, 143, 143);
+}
+.Executives .other__executives > div h5{
+    color: black;
+    margin-bottom: 10px;
+}
+.Executives .other__executives > div img{
+height:100%;
+width:80px;
+object-fit: cover;
+margin: 0;
+margin-right: 10px;
+border-radius: 10px;
+}
+
+
+

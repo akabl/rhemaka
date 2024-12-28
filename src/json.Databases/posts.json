@@ -1,0 +1,70 @@
+
+{
+    "postDetails": [
+      {
+       "userImage": "images.profile",
+        "title":  "we love to code that the wrong way",
+        "userName": "ekpeyoung okon",
+        "postTime": "24 aprile 2020",
+        "Categorey":  "web development",
+        "postImages": "images.profile1",
+        "postBody": "This allocation process is crucial because it ensures that all costs, not just direct costs, are taken into account when determining the total cost of production. Indirect costs, often referred to as overheads, include expenses such as utilities, rent, administrative salaries, and equipment depreciation. These costs are not directly traceable to specific products or services but are essential for the overall operation of the business.all costs, not just direct costs, are taken into account when determining the total cost of production. Indirect costs, often referred to as overheads, include expenses such as utilities, rent, administrative salaries, and equipment depreciation. These costs are not directly traceable to specific products or services but are essential for the overall operation of the business.",
+        "views":  "1k",
+        "replys": "102",
+        "comments": [
+          {
+            "user_ID":"",
+            "user_comment": "",
+            "comment_reaction": "",
+            "replys_to_comment":[
+              {
+                "user_ID":"",
+                "user_reply": "",
+                "reply_reaction": ""
+              }
+            ]
+          }
+        ],
+        "hearts": "5k",
+        "UsersWhoReacted":[
+          " user_ID user_Reaction ",
+          " user_ID user_Reaction "
+          ],
+        "share":"22",
+        "key":1
+        },
+        {
+          "userImage": "images.profile",
+           "title":  "we love to code that the wrong way",
+           "userName": "ekpeyoung okon",
+           "postTime": "24 aprile 2020",
+           "Categorey":  "web development",
+           "postImages": "images.profile1",
+           "postBody": "Overhead absorption is a fundamental concept in cost accounting that addresses the allocation of indirect costs to various departments and, ultimately, to the products or services they produce. This allocation process is crucial because it ensures that all costs, not just direct costs, are taken into account when determining the total cost of production. Indirect costs, often referred to as overheads, include expenses such as utilities, rent, administrative salaries, and equipment depreciation. ",
+           "views":  "1k",
+           "replys": "102",
+           "comments": [
+             {
+               "user_ID":"",
+               "user_comment": "",
+               "comment_reaction": "",
+               "replys_to_comment":[
+                 {
+                   "user_ID":"",
+                   "user_reply": "",
+                   "reply_reaction": ""
+                 }
+               ]
+             }
+           ],
+           "hearts": "5k",
+           "UsersWhoReacted":[
+             " user_ID user_Reaction ",
+             " user_ID user_Reaction "
+             ],
+           "share":"22",
+           "key":1
+           }
+        
+    ]
+}

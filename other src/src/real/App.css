@@ -1,0 +1,157 @@
+/* Basic Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #000;
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.start-selling-btn {
+  background-color: #e6007e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+/* My ids */
+#ur{
+  color: #e6007e;
+}
+#hub{
+  padding-left:20px;
+}
+#hit, #trendingHit, #billion{
+  color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+}
+
+.search-bar button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 300px;
+  height: auto;
+}
+
+.trending {
+  margin: 50px 0;
+}
+
+.tracks {
+  display: flex;
+  gap: 20px;
+}
+
+.track-card {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.track-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.explore {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.explore-text {
+  width: 50%;
+}
+
+.explore-image img {
+  width: 300px;
+}
+
+.genre {
+  margin: 50px 0;
+}
+
+.genre-grid {
+  display: flex;
+  gap: 15px;
+}
+
+.genre-grid button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-promo {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.footer-promo button {
+  background-color: #e6007e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

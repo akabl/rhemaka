@@ -1,0 +1,226 @@
+main{
+    min-height: 100px;
+    background:none;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background:rgb(0, 119, 255);
+    font-family:sans-serif;
+}
+.main-container{
+    background: rgb(255, 255, 255);
+    height:calc(100vh - 120px);
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width:calc(100% - 60px);
+    font-family:sans-serif;
+    overflow-y: scroll;
+}
+.about-us{
+    background:linear-gradient(40deg, rgba(0, 61, 153, 0.534), rgba(209, 0, 70, 0.562)), url(../../assets/profile.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(26, 26, 26);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding:50px 10%;
+}
+.about-us p{
+    color:rgb(255, 255, 255);
+    margin:20px 0 0 0;
+    line-height:1.5;
+}
+.about-us h3{
+    color:rgb(0, 110, 255);
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    padding:10px 20px;
+    border-radius: 20px;
+}
+.our-values {
+    background-color: rgb(255, 255, 255);
+    color:rgb(26, 26, 26);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding:50px 5%;
+    width:100%;
+}
+.our-values > div {
+    color:rgb(26, 26, 26);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding:50px 10%;
+    width:100%;
+}
+.our-values > div> div {
+    width:15rem;
+    height:15rem;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    box-shadow: 0 0 20px 5px rgb(223, 223, 223);
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+    padding:30px 35px
+}
+.our-values h3{
+    color:rgb(124, 124, 124);
+}
+.our-values > div> div img{
+    width:70px;
+    height:70px;
+}
+.our-values > div> div p{
+    font-size: 14px;
+    text-align: justify;
+    color:rgb(184, 184, 184);
+}
+.our-mission{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: rgb(230, 230, 230);
+    padding:50px 0
+}
+.our-mission h3{
+    color:rgb(0, 110, 255);
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    padding:10px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.our-mission > div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:80%;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    max-height: 21rem;
+}
+.our-mission > div img{
+    width:50%;
+    height:100%;
+    object-fit: cover;
+}
+.our-mission > div > div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:50%;
+    height:100%;
+    padding:30px;
+}
+.our-mission > div > div p {
+    color:rgb(94, 94, 94);
+    font-size: small;
+    text-align: justify;
+}
+.our-mission > div > div > div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:50px;
+}
+.our-mission > div > div > div img {
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.our-team{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    width:100%;
+}
+.our-team > h3{
+    color:rgb(124, 124, 124);
+    margin-bottom: 50px;
+}
+.our-team > div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-team > div > div {
+    width:15rem;
+    height:18rem;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    box-shadow: 0 0 20px 5px rgb(223, 223, 223);
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+    flex-direction: column;
+    padding:30px 35px
+}
+.our-team > div > :nth-child(2), .our-team > div > :nth-child(3) {
+    width:15rem;
+    height:20rem;
+    background-color: rgb(213, 217, 226);
+    color:white;
+}
+.our-team > div > div:hover{
+    transform: scale(105%);
+}
+.our-team > div > div img{
+    width:100%;
+    height:50%;
+    object-fit: cover;
+}
+.our-team > div > div p, .our-team > div > div h5 {
+    color:rgb(94, 94, 94);
+    font-size: small;
+    text-align: justify;
+}
+footer{
+    height:20rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding:50px;
+    background-color: rgb(23, 42, 85);
+    margin-top: 50px;
+}
+footer p{
+    color:white;
+    margin-top: 20px;
+}
+footer ul {
+    color:rgb(158, 158, 158);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    list-style-type: none;
+}
+footer ul li {
+    margin:0 10px;
+}
+footer ul li a{
+   color:rgb(184, 184, 184);
+}
+
+
+
+
+

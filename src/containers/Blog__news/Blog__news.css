@@ -1,0 +1,209 @@
+.showcase{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    position:relative;
+    /* overflow-y:hidden; */
+}
+
+.searchbar{
+    width:45%;
+    height:70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:5rem;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+    z-index: 4;
+}
+.searchbar img{
+    width: 50px;
+    height:50px
+}
+.searchbar input{
+    width:calc(100% - 70px);
+    height:60px;
+    border: none;
+    font-size: 20px;
+}
+.searchbar input::placeholder{
+    font-size: 20px;
+}
+.showcase_slider__left{
+    width:60%;
+    height:100%;
+}
+.showcase_slider__left img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position:relative;
+    z-index: 0;
+}
+.showcase_slider__right{
+    overflow-y:scroll;
+    width:40%;
+    height:100%;
+}
+.showcase_slider__right::-webkit-scrollbar{
+    background-color:rgb(235, 235, 235);
+    width: 5px;
+}
+.showcase_slider__right::-webkit-scrollbar-thumb{
+    background-color:rgba(0, 119, 255, 0.185);
+    border-radius: 20px;
+}
+.showcase_slider__right::-webkit-scrollbar-track{
+    width: 5px;
+}
+.showcase_slider__right img{
+    object-fit: cover;
+    width: 50%;
+    height:20rem;
+    position:relative;
+    z-index: 0;
+}
+.showcase::after{
+    width: 100%;
+    height:100%;
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(40deg, rgba(1, 26, 80, 0.562), rgba(0, 0, 0, 0.678));
+    z-index: 1;
+}
+.showcase__text{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    z-index: 4;
+}
+.showcase__text h2, .showcase__text p{
+    text-align: left;
+    margin:0;
+}
+.showcase__text h2{
+    color:rgb(76, 168, 255);
+    margin:20px 0;
+}
+.showcase__text :nth-child(2), .showcase__text :nth-child(3){
+    color:rgb(143, 143, 143);
+    margin:0 0 5px 0;
+}
+.showcase__text :nth-child(4){
+    line-height: 1.2;
+}
+.rhemaka__showcase{
+    width:100%;
+    height:20rem;
+    background-color: rgb(221, 221, 221);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding:10rem;
+}
+.rhemaka__showcase h1{
+    -webkit-text-stroke: 1.5px   rgb(80, 80, 80);
+    font-size: 150px;
+    color:  rgb(221, 221, 221);
+    text-align: right;
+    width:100%;
+}
+.rhemaka__showcase h1 > #r{
+    color: rgb(80, 80, 80);
+}
+.rhemaka__showcase :nth-child(1){
+    text-align: left;
+    width:100%;
+    color:rgb(61, 74, 82);
+    font-weight:bold;
+}
+.rhemaka__showcase :nth-child(1) > span{
+    text-decoration: underline rgb(76, 168, 255) 2px;
+    color:gray;
+}
+.rhemaka__showcase :nth-child(3){
+    text-align: right;
+    width:100%;
+    color:rgb(153, 153, 153);
+    font-weight:bold;
+    margin-top:1rem;
+    padding:0 0 0 50%;
+}
+.post_section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 5rem 13%;
+}
+.post_section > div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.post_section > div > div{
+    width:30%;
+    height:20rem;
+    margin:15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.233);
+    border-radius:5px;
+} 
+.post_section > div > div img{
+    width:100%;
+    height:13rem;
+    object-fit: cover;
+    border-radius:5px;
+}
+.post_section > div > div > :nth-child(4){
+   font-size: 12px;
+   color: rgba(0, 74, 143, 0.521);
+   padding:0px 20px;
+}
+.post_section > div > div > :nth-child(3){
+    font-size: 12px;
+    color: rgba(54, 54, 54, 0.5);
+    text-align: justify;
+    padding:5px 20px;
+ }
+ .post_section > div > div > :nth-child(2){
+    font-size: 15px;
+    color: rgba(27, 27, 27, 0.664);
+    text-align: justify;
+    padding:5px 20px;
+ }
+ .post_section > h3 {
+    color:rgb(49, 49, 49);
+    text-align: left;
+    width:100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 16px;
+ }
+ .post_section > h3 > span{
+    text-decoration: underline rgb(76, 168, 255) 2px;
+    color:gray;
+    font-weight: 400;
+}

@@ -1,0 +1,102 @@
+.ContactSupport > div > form {
+    width:60%;
+    background: rgb(255, 255, 255);
+    height:100%;
+    padding: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 40px;
+}
+.ContactSupport > div > form h2 {
+color:rgb(65, 65, 65);
+margin:0;
+}
+.ContactSupport > div > form input, .ContactSupport > div > form textarea{
+    padding:10px;
+    border:none;
+    max-width:100%;
+    width: 100%;
+    margin:10px 0;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    font-size: 13px;
+    font-weight:50;
+    color:black;
+}
+.ContactSupport > div > form input::placeholder, .ContactSupport > div > form textarea::placeholder{
+    font-size: 12px;
+    font-weight:50;
+    color:rgb(110, 110, 110);
+    font-family: sans-serif;
+}
+.ContactSupport > div > form textarea{
+    height:4rem;
+    max-height: 4rem;
+}
+.ContactSupport > div > form input[type="submit"]{
+    background-color: rgba(27, 27, 27, 0.932);
+    border:none;
+    padding:10px;
+    color:rgb(255, 255, 255);
+}
+.ContactSupport > div > form input[type="submit"]:hover{
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+}
+.contact-suport-notification{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+    bottom:100px;
+    right: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-suport-notification img{
+    width: 30px;
+    height:30px;
+    animation: ringing 0.01s infinite;
+}
+.notification-signal{
+    background-color:rgb(255, 0, 98);
+    padding:5px;
+    border-radius: 50%;
+    position: absolute;
+    top:-15px;
+    right:-5%;
+}
+.notification-signal p{
+    color:rgb(255, 255, 255);
+    font-size:15px;
+    font-weight:bold;
+}
+.contact-suport-footer{
+    position:fixed;
+    bottom:0px;
+    left:auto;
+    right:auto;
+    background:rgb(113, 170, 255);
+    height:70px;
+    padding:20px;
+    display: flex;
+    align-items: center;
+}
+.contact-suport-footer p{
+    font-size: 12px;
+    margin:0;
+}
+@keyframes ringing{
+    0%{
+
+         transform: scale(110%) rotate(15deg);
+    } 
+    50%{
+
+        transform: scale(110%) rotate(-15deg);
+    }
+    100%{
+
+        transform: scale(110%) rotate(0deg);
+    }
+}
